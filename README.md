@@ -8,6 +8,7 @@ Les contrôles intègrent implicitement la démarche ISO 27005 et sont réalisé
 Contrôles 
 _______________________________________________________________________________________________________________________
 Contrôle 1. Gouvernance : Politique SSI de tous les périmètres du SI, ainsi que les applications SaaS de nos fournisseurs. 
+
 Menace couverte : filiales et partenaires comme porte d'entrée. 
 Criticité : haute. Réf ISO 27001 A.5.1. Maturité cible : 5. Méthode de vérification Revue politique, fournisseurs.
 
