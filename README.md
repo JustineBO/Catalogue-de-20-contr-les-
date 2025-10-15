@@ -53,6 +53,40 @@ Menace couverte : Confidencialité de la donnée. Criticité : Haute. Réf ISO 2
 Menace couverte : Exploitation des vulnérabilités des actifs sensible et de sécurité. Criticité : Haute. Réf ISO 27001 A.8.8. Maturité : 5. Méthode de vérification Procédure de gestion des vulnérabilités, compte rendu des comités de triage, reporting du suivi des vulnérabilités à la direction, échantillon des scans de vulnérabilités et résultat des bug bounty en N-1.
 
 ### Contrôle 11. Contrôle des accès à privilèges (PAM) : Journalisation, session recording, contrôle des accès, politique des PAM. 
-Menace couverte : combinaison toxique (lutte contre la fraude interne), escalade de comptes administrateurs, ADCS (serveur de certificat, CA racine ou subordonnée) compromis. Criticité : Haute. Réf ISO 27001 A.5.18. Maturité : 5. Revue des comptes, contrôle annuel des accès et politique PAM.
+Menace couverte : combinaison toxique (lutte contre la fraude interne), escalade de comptes administrateurs, ADCS (serveur de certificat, CA racine ou subordonnée) compromis. Criticité : Haute. Réf ISO 27001 A.5.18. Maturité : 5. Méthode de vérification Revue des comptes, contrôle annuel des accès et politique PAM.
 
-### Contrôle 12. Sécurité réseau : Segmentation VPC/VPN/DMZ, audit des flux entrants. 
+### Contrôle 12. Sécurité réseau : Segmentation VPC/VPN/DMZ, audit des flux entrants (règles de routage/firewall et EDR). 
+
+Menace couverte : intrusion via VPN, déplacements latéraux. Criticité : Haute. Réf ISO 27001 A.8.20. Maturité : 4. Méthode de vérification Revue firewall, EDR, VPC flow logs.
+
+### Contrôle 13. Gestion des tiers : Audit de sécurité des tiers et des filiales (Contrôle permanent, demande de Plan d'Assurance Sécurité, audits externes). 
+
+Menace couverte : attaque supply chain. Criticité : Haute. Réf ISO 27001 A.5.19. Méthode de vérification Revue des contrats, audits des tiers.
+
+### Contrôle 14. Sécurité applicative : Test d'intrusion avant mise en production, code review, couverture du périmètre par le WAF. 
+
+Menace couverte : Vulnérabilité web et de code (exemple : XSS, Log4j). Criticité : Haute. Réf ISO 27001 A.8.9. Maturité : 4. Méthode de vérification Rapport de pentests, Scan de code, configuration du WAF.
+
+### Contrôle 15. Gestion d'incident : Procédure de réponse à incident en rapport avec l'évolution de la menace en N-1. 
+
+Menace couverte : Attaque automatisées, deepfake, usurpation du support informatique (helpdesk). Criticité : Moyenne. Réf ISO 27001 A.5.24. Maturité : 4. Méthode de vérification Retex des rejeux d'incident, exercice de crise, procédure de la remontée des incidents au SOC. 
+
+### Contrôle 16. Surveillance des applications SaaS : Couverture des accès, logs des solutions de monitoring des accès avec SSO et MFA, détection des comportements (UEBA).
+
+Menace couverte : usurpation de compte utilisateur et administrateur, escalade des privilèges. Criticité : Moyenne. Réf ISO 27001 A.8.16. Maturité : 4. Méthode de vérification Analyse de log, revue et contrôle des accès et habilitations. 
+
+### Contrôle 17. Continuité d'activité (résilience) : PRA/PCA testés avec les scénarios les plus critiques impliquant les actifs vitaux pour l'activité.
+
+Menace couverte : Ransomware, attaque éclair, suppression de sauvegarde. Criticité : Haute. Réf ISO 27001 A.5.29. Maturité : 5. Méthode de vérification Retex exercide de crise PCA/PRA, procédure d'escalade en cas d'incident sur les périmètres sensibles.
+
+### Contrôle 18. Cryptographie : Rotation des clefs , gestion des secrets, protocoles de chiffrement et de hachage utilisés. 
+
+Menace couverte : Exfiltration des clefs et des secrets. Criticité : Haute. Réf ISO 27001 A.8.24. Maturité : 4. Méthode de vérification Audit de gestion des clefs et des secrets, ainsi que les protocoles utilisés.
+
+### Contrôle 19. Sensibilisation étendue : formation des équipes aux nouvelles menaces (exemple deepfake).
+
+Menace couverte : nouvelles menaces comme le deepfake, usurpation des dirigeants. Criticité : Moyenne. Réf ISO 27001 A.6.3. Maturité : 3. Méthode de vérification : Formation, reporting RH.
+
+### Contrôle 20. Amélioration continue : Revue de direction intégrant les menaces émergentes (évolution de la posture de la cybersécurité).
+
+Menace couverte : Adaptation aux nouveaux risques. Criticité : Moyenne. Réf ISO 27001 A.10.1. Maturité : 4. Méthode de vérification Compte rendu des revues de la direction.
